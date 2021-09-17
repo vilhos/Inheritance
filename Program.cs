@@ -53,6 +53,12 @@ namespace Inheritance
             _isFuelFull = isFuelFull;
             FuelCheck();
         }
+        
+        public Vehicle(bool isFuelFull)
+        {
+            _isFuelFull = isFuelFull;
+            FuelCheck();
+        }
 
         private void FuelCheck()
         {
@@ -61,12 +67,6 @@ namespace Inheritance
 
             else
                 Console.WriteLine("Check fuel.");
-        }
-
-        public Vehicle(bool isFuelFull)
-        {
-            _isFuelFull = isFuelFull;
-            FuelCheck();
         }
 
         public void Info()
